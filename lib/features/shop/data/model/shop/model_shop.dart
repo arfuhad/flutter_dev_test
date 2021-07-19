@@ -26,7 +26,29 @@ class ModelShop extends EntityShop {
     @required this.highestDiscountPercent,
     @required this.lastAddToCart,
     @required this.lastAddToCartThatSold,
-  });
+  }) : super(
+            slNo: slNo,
+            sellerName: sellerName,
+            sellerProfilePhoto: sellerProfilePhoto,
+            sellerItemPhoto: sellerItemPhoto,
+            ezShopName: ezShopName,
+            defaultPushScore: defaultPushScore,
+            aboutCompany: aboutCompany,
+            allowCod: allowCod,
+            division: division,
+            subDivision: subDivision,
+            city: city,
+            state: state,
+            zipcode: zipcode,
+            country: country,
+            currencyCode: currencyCode,
+            orderQty: orderQty,
+            orderAmount: orderAmount,
+            salesQty: salesQty,
+            salesAmount: salesAmount,
+            highestDiscountPercent: highestDiscountPercent,
+            lastAddToCart: lastAddToCart,
+            lastAddToCartThatSold: lastAddToCartThatSold);
 
   final String? slNo;
   final String? sellerName;

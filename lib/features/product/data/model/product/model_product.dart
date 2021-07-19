@@ -23,7 +23,26 @@ class ModelProduct extends EntityProduct {
     @required this.ezShopName,
     @required this.defaultPushScore,
     @required this.myProductVarId,
-  });
+  }) : super(
+            slNo: slNo,
+            productName: productName,
+            shortDetails: shortDetails,
+            productDescription: productDescription,
+            availableStock: availableStock,
+            orderQty: orderQty,
+            salesQty: salesQty,
+            orderAmount: orderAmount,
+            salesAmount: salesAmount,
+            discountAmount: discountAmount,
+            discountPercent: discountPercent,
+            unitPrice: unitPrice,
+            productImage: productImage,
+            sellerName: sellerName,
+            sellerCoverPhoto: sellerCoverPhoto,
+            sellerProfilePhoto: sellerProfilePhoto,
+            ezShopName: ezShopName,
+            defaultPushScore: defaultPushScore,
+            myProductVarId: myProductVarId);
 
   final String? slNo;
   final String? productName;

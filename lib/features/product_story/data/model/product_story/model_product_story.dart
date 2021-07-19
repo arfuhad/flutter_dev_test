@@ -28,7 +28,31 @@ class ModelProductStory extends EntityProductStory {
     @required this.shopLink,
     @required this.friendlyTimeDiff,
     @required this.slNo,
-  });
+  }) : super(
+            storyTime: storyTime,
+            story: story,
+            storyType: storyType,
+            storyImage: storyImage,
+            storyAdditionalImages: storyAdditionalImages,
+            promoImage: promoImage,
+            orderQty: orderQty,
+            lastAddToCart: lastAddToCart,
+            availableStock: availableStock,
+            myId: myId,
+            ezShopName: ezShopName,
+            companyName: companyName,
+            companyLogo: companyLogo,
+            companyEmail: companyEmail,
+            currencyCode: currencyCode,
+            unitPrice: unitPrice,
+            discountAmount: discountAmount,
+            discountPercent: discountPercent,
+            iMyId: iMyId,
+            shopName: shopName,
+            shopLink: shopLink,
+            shopLogo: shopLogo,
+            friendlyTimeDiff: friendlyTimeDiff,
+            slNo: slNo);
 
   final DateTime? storyTime;
   final String? story;
